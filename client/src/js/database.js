@@ -6,12 +6,12 @@ const initdb = async () =>
     // Add our database schema if it has not already been initialized
     upgrade(db) {
       if (db.objectStoreNames.contains('jate')) {
-        console.log('jate database already exists');
+        console.log('Sorry, jate database already exists!');
         return;
       }
       // Create a new object store for the data and give it an key name of 'id' which needs to increment automatically
       db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
-      console.log('jate database created');
+      console.log('jate database created successfully!');
     },
   });
 
@@ -33,7 +33,7 @@ export const putDb = async (content) => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('🚀 - data saved to the database', result);
+  console.log('🚀 Data saved to the database successfully!', result);
 
   console.error('putDb not implemented');
 };
@@ -61,7 +61,6 @@ export const getDb = async () => {
   return result;
 
   console.error('getDb not implemented');
-
 };
 
 initdb();
