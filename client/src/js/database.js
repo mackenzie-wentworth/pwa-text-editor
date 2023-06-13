@@ -33,9 +33,7 @@ export const putDb = async (content) => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('🚀 Data saved to the database successfully!', result);
-
-  console.error('putDb not implemented');
+  console.log('🚀 Data saved to the database successfully!', result.value);
 };
 
 
@@ -53,14 +51,16 @@ export const getDb = async () => {
   const store = tx.objectStore('jate');
 
   // Use the .getAll() method to get all data in the database.
-  const request = store.getAll();
+  const request = store.get(1);
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('result.value', result);
-  return result;
+  result
+  ? console.log('🚀 - data retrieved from the database', result.value)
+  : console.log('🚀 - data not found in the database');
+  return result?.value;
+  
 
-  console.error('getDb not implemented');
 };
 
 initdb();
