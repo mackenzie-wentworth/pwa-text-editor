@@ -14,6 +14,15 @@ To get and store data, JATE uses a browser database **(IndexedDB)** and npm pack
 
 ## Table of Contents
 
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Questions](#questions)
+- [License](#license)
+- [Badges](#badges)
+
 ## User Story
 
 ```md
