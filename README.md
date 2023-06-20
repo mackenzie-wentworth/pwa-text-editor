@@ -112,7 +112,7 @@ Below are the steps to run JATE from your terminal so that you can use the appli
 
     ![An image showing how to install JATE as a separate application.](./assets/images/jate-click-install.png)
 
-5. The following image demonstrates JATE once it's been installed as a separate applicaiton. 
+5. The following image demonstrates JATE once it's been installed as a separate application. 
 
     ![An image of JATE as a separate application once a user has installed it.](./assets/images/jate-installed-app.png)
 
