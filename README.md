@@ -89,7 +89,7 @@ THEN I should have proper build scripts for a webpack application
 
 ## Usage
 
-Below are the steps to run JATE from your terminal so that you can view the application in a web browser and additionally through a separate installable app.
+Below are the steps to run JATE from your terminal so that you can use the application in a web browser and additionally through a separate installable app.
 
 ### *How to Use JATE:*
 1. In an integrated terminal from the root directory, you first need to invoke the application by typing the following `npm` command:
